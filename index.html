@@ -8,84 +8,89 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: #d8d8d8;
-            color: black;
+            background: #f4f4f4;
+            color: #222;
         }
 
         header {
-            background: #8f8f8f;
-            padding: 15px;
-            border-bottom: 2px solid #666;
+            background: #2f2f2f;
+            color: white;
+            padding: 18px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .container {
+            padding: 40px;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            padding: 25px;
+            max-width: 600px;
+            box-shadow: 2px 2px 0 rgba(0,0,0,0.05);
         }
 
         h1 {
-            margin: 0;
-            font-size: 28px;
+            margin-top: 0;
         }
 
-        nav {
-            margin-top: 10px;
+        p {
+            color: #444;
+            line-height: 1.5;
         }
 
-        nav a {
-            color: blue;
+        a.button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 16px;
+            background: #2f2f2f;
+            color: white;
             text-decoration: none;
-            margin-right: 15px;
+            border-radius: 4px;
         }
 
-        .main {
-            padding: 25px;
-        }
-
-        .box {
-            background: #ececec;
-            border: 1px solid #999;
-            padding: 15px;
-            width: 500px;
-        }
-
-        button {
-            background: #bfbfbf;
-            border: 1px solid #777;
-            padding: 8px 15px;
-            cursor: pointer;
+        a.button:hover {
+            background: #444;
         }
 
         footer {
-            margin-top: 40px;
-            padding: 10px;
-            background: #8f8f8f;
-            border-top: 2px solid #666;
+            margin-top: 60px;
+            padding: 15px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
 
 <header>
-    <h1>JΣΛП</h1>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="games.html">Games</a>
-    </nav>
+    <div class="logo">JΣΛП</div>
 </header>
 
-<div class="main">
-    <div class="box">
-        <h2>Welcome to JΣΛП</h2>
+<div class="container">
 
+    <div class="card">
+        <h1>Welcome</h1>
         <p>
-            This website has games.
+            This is JΣΛП — a simple game site where you can play different browser games.
+
         </p>
 
-        <button onclick="location.href='games.html'">
-            Go To Games
-        </button>
+        <a class="button" href="games.html">Go to Games</a>
     </div>
+
 </div>
 
 <footer>
-    JΣΛП 2026
+    JΣΛП © 2026
 </footer>
 
 </body>

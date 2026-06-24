@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JΣΛП</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Inter',sans-serif;
+        }
+
+        body{
+            background:#09090f;
+            color:white;
+            min-height:100vh;
+            display:flex;
+            flex-direction:column;
+        }
+
+        body::before{
+            content:"";
+            position:fixed;
+            inset:0;
+            background:
+                linear-gradient(rgba(255,255,255,.03) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.03) 1px, transparent 1px);
+            background-size:40px 40px;
+            z-index:-1;
+        }
+
+        header{
+            padding:20px 40px;
+            border-bottom:1px solid rgba(255,255,255,.08);
+        }
+
+        .logo{
+            font-size:2rem;
+            font-weight:700;
+            color:#00d9ff;
+            letter-spacing:3px;
+        }
+
+        .hero{
+            flex:1;
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            text-align:center;
+            padding:20px;
+        }
+
+        .hero h1{
+            font-size:4rem;
+            background:linear-gradient(90deg,#00d9ff,#7d5cff);
+            -webkit-background-clip:text;
+            -webkit-text-fill-color:transparent;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            color:#9fa3b8;
+            max-width:600px;
+            margin-bottom:35px;
+        }
+
+        .btn{
+            background:#00d9ff;
+            color:black;
+            text-decoration:none;
+            padding:14px 30px;
+            border-radius:12px;
+            font-weight:600;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+        }
+
+        footer{
+            text-align:center;
+            padding:20px;
+            color:#7f8499;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">JΣΛП</div>
+</header>
+
+<section class="hero">
+    <h1>JΣΛП</h1>
+    <p>
+        Welcome to JΣΛП. Play games, discover new favorites, and enjoy a clean gaming experience.
+    </p>
+
+    <a href="games.html" class="btn">Enter Games</a>
+</section>
+
+</body>
+</html>
